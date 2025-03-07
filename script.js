@@ -4,7 +4,7 @@
 let input = document.querySelector("form")
 
 
-input.addEventListener("dblclick",()=>{
+input.addEventListener("click",()=>{
    
     let select = document.querySelector("#colorSelect")
     if(select.selectedIndex==-1){
