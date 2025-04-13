@@ -1,17 +1,17 @@
 //your JS code here. If required.
 
 
-let input = document.querySelector("form")
+let input = document.querySelector('input[type="button"]')
+    let colorSelect = document.querySelector("#colorSelect")
 
 
 input.addEventListener("click",()=>{
    
-    let select = document.querySelector("#colorSelect")
-    if(select.selectedIndex==-1){
-    alert("you haven't selected yet")
-        return
-    }
+    if(colorSelect.selectedIndex!=-1){
+		
+    colorSelect.remove(colorSelect.selectedIndex)
     
-    select.remove(select.selectedIndex)
+	}
+    
 })
 
